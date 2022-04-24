@@ -1,0 +1,25 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("enter first number ");
+    int a = int.Parse(Console.ReadLine());
+       Console.WriteLine("enter second number ");
+    int b = int.Parse(Console.ReadLine());
+    Console.Write("prime numbers ");
+     for(int i=a;i<=b;i++){
+         int l=i/2+1;
+         for(int j=2;j<=l;j++){
+             if(i%j==0){
+                
+                 break;
+             }
+             else  if(j==l){Console.Write(i+" ");}
+         }
+         
+         
+         
+     }
+ 
+ 
+  }
+}
