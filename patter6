@@ -1,0 +1,22 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("enter a number");
+    int n= int.Parse(Console.ReadLine());
+    
+    int l=1;
+    for(int i=n;i>=1;i--){
+         int y=0;
+        for(int k=1;k<=(n+l);k++){
+           
+            if(k>i){
+                y=y+1;
+                if(y%2==0){Console.Write("0");}
+                else {Console.Write("1");}
+            }
+            else{Console.Write(" ");}
+        }l=l+1;
+        Console.WriteLine();
+    }
+  }
+}
