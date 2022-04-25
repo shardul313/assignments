@@ -1,0 +1,26 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("enter a number");
+    int n= int.Parse(Console.ReadLine());
+    int y = n;
+    if(n>=65&&n<=90){
+        int t=n-65;
+        for(int i=1;i<=t;i++){
+            y=y-1;
+            for(int j=65;j<=y;j++){Console.Write(Convert.ToChar(j));}
+         Console.WriteLine();   
+        }
+    }
+    else if(n>=97&&n<=122){
+        int t=n-97;
+        for(int i=1;i<=t;i++){
+            y=y-1;
+            for(int j=97;j<=y;j++){Console.Write(Convert.ToChar(j));}
+         Console.WriteLine();   
+        }
+    }
+    else{Console.WriteLine("invalid input");}
+     
+  }
+}
