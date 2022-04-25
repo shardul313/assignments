@@ -1,0 +1,12 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("enter a number");
+    int n= int.Parse(Console.ReadLine());
+     for(int i=n;i>=1;i--){
+         for(int j=i;j>=1;j--){
+             Console.Write(j);
+         }Console.WriteLine();
+     }
+  }
+}
