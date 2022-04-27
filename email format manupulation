@@ -1,0 +1,27 @@
+ using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter the mail");
+            string str = Console.ReadLine();
+            string[] s = str.Split('@');
+            string abbr = string.Empty;
+            abbr += s[0].Substring(0, 3);
+            for (int i = 3; i < s[0].Length; i++)
+            {
+                abbr += "*";
+
+            }
+            abbr += "@" + s[1];
+            Console.WriteLine("\n\n email:"+abbr);
+            Console.ReadLine();
+        }
+    }
