@@ -1,0 +1,15 @@
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("enter the nmame");
+    string str = Console.ReadLine();
+    string[] s=str.Split(" ");
+    string abbr=string.Empty;
+    for(int i=0;i<s.Length-1;i++){
+        abbr+=s[i].Substring(0,1)+". ";
+        
+    }abbr+=s[s.Length-1];
+    Console.WriteLine(abbr);
+    
+  }
+}
